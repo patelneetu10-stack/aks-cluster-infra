@@ -1,0 +1,17 @@
+environment         = "prod"
+location            = "eastus"
+cluster_name        = "enterprise-core"
+kubernetes_version  = "1.29.2"
+system_node_count   = 3
+system_vm_size      = "Standard_D4s_v5"
+user_node_min_count = 3
+user_node_max_count = 10
+user_vm_size        = "Standard_D8s_v5"
+
+tags = {
+  Workload     = "Production-Core-Microservices"
+  Environment  = "Production"
+  Orchestrator = "AKS"
+  ManagedBy    = "Terraform"
+  CostCenter   = "Cloud-Engineering"
+}
